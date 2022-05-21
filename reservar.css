@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-right: 0;
+}
+
+.contenido-reservar {
+    margin-top: 2px;
+    text-align: center;
+    height: auto;
+    width: 100vw;
+}
+
+.contenido-reservar h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-style: inherit;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    filter: none;
+    color: #fff;
+}
+
+.contenido-reservar img {
+    width: 40%;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+/*-----------------boton de redes-------------------------*/
+
+.socials2 {
+    margin: 0%;
+    list-style: none;
+    display: flex;
+    min-height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials2 li {
+    margin: 0 80px;
+}
+
+.socials2 a {
+    text-decoration: none;
+    color: linear-gradient(30deg, rgba(220, 20, 60, 0.267), rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315));
+    border: hidden;
+    padding: 5px;
+}
+
+.socials2 a i {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    padding-right: 0;
+}
+
+header{
+    width: 100vw;
+    height: 200px;
+    background:linear-gradient(30deg, rgba(220, 20, 60, 0.267),rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315));  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,(30deg, rgba(220, 20, 60, 0.267),rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315), url(Imagenes/Logo.png)));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, 30deg, rgba(220, 20, 60, 0.267),rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315, url(Imagenes/Logo.png))); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+    
+}
+  .logo img{
+    padding-left: 0%;
+    width: 200px; 
+    height: 200px;
+    position: absolute;
+}
+
+header >nav{
+    text-align: right;
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: all;
+    
+}
+header> nav > a{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 30px;
+    margin-top: 0%;
+    text-align: right;
+    
+}
+header > form {
+    color: rgba(179, 162, 162, 0.336);
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 0%;
+    padding-top: 0%;  
+      
+}
+/*-----------------------contenido--------------------------------------------------*/
+.contenido{
+  text-align: center;
+  margin-top: 2px;
+  padding-bottom: 2px;
+  height: auto;
+  width: 100vw;
+}
+.contenido > h1{
+text-align: center;
+}
+.contenido > p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-viajes{
+   size-adjust: auto;
+    background: linear-gradient(30deg, rgba(220, 20, 60, 0.267),rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315));
+    
+  }
+
+.header-viajes >nav{
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: all;
+}
+.header-viajes nav button{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    margin-right: 30px;
+    margin-top: 0%;
+    margin-bottom: 30px;
+    text-align: right;
+    border: none;
+    background: fixed;
+    
+}
+
+/*-------------------prueba imagenes y textos--------------------------------------------------------------------*/
+
+.imagenes img{
+  width: 40%;
+  margin-left: 140px;
+
+ 
+}
+.imagenes tbody{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  margin-right: 30px;
+  
+}
+
+/*--------------------------Buscador---------------------------------------------------------------------*/
+.contenBg{
+    
+    width: 100%;
+    height: 1200px;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: opacity(0.8);
+}
+.contenBg::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+   
+    position: relative;
+    opacity: 0.8;
+}
+@import "compass/css3";
+
+.flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 50%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+  padding-right: 250px;
+	position: static;
+  float: right;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+	position: absolute;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; 
+	overflow: hidden;
+  width: 250px;
+  height: 250px;
+}
+
+.flexsearch--input {
+  width: 100%;
+  
+}
+.flexsearch {
+  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+}
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+ 	height: 40px;
+  padding: 0 46px 0 10px;
+	border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: hidden;
+	border-width: 5px;
+  margin-top: 30px;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+	font-size: 16px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+	
+.flexsearch--submit {
+  position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+  padding: 0;
+  border: none;
+	margin-top: 20px; /* margin-top + border-width */
+  margin-right: 5px; /* border-width */
+	background: transparent;
+  color: #888;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+  
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #333; 
+}
+
+.flexsearch--submit:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
+}
+
+.conten > h1{
+  text-align: center;
+  position: inherit;
+  padding-top: 0%;
+
+}
+/*-----------------------------footer----------------------------------------------------------------*/
+footer{
+ 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(30deg, rgba(220, 20, 60, 0.267),rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315));
+  height: auto;
+  width: 100vw;
+
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #ffffff;
+}
+/*-----------------boton de redes-------------------------*/
+.socials{
+  list-style: none;
+  display: flex;
+  min-height: 35vh;
+  align-items: center;
+  justify-content: center;
+  
+}
+.socials li{
+  margin: 0 10px;
+  
+}
+.socials a{
+  text-decoration: none;
+  color: linear-gradient(30deg, rgba(220, 20, 60, 0.267),rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315));
+  border: hidden;
+  padding: 5px;
+  transition: all .4s ease-in-out;
+ 
+}
+.socials a i{
+  font-size: 1.5rem; 
+  
+}
+.socials a:hover i{
+  transform: scale(1.7);
+}
+
+.footer-bottom{
+  background: linear-gradient(30deg, rgba(220, 20, 60, 0.438),rgba(160, 81, 45, 0.418), rgba(65, 105, 225, 0.438), rgba(205, 92, 92, 0.425), rgba(128, 0, 128, 0.411));  
+  width: 100vw;
+  padding: 20px;
+padding-bottom: 40px;
+  text-align: center;
+}
+.footer-bottom p{
+float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom p a{
+color:#44bae8;
+font-size: 16px;
+text-decoration: none;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+.footer-menu{
+float: right;
+
+}
+.footer-menu ul{
+display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+color: #cfd2d6;
+text-decoration: none;
+}
+.footer-menu ul li a:hover{
+color: #27bcda;
+}
+@media (max-width:500px) {
+.footer-menu ul{
+display: flex;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+}

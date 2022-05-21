@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    background: linear-gradient(30deg, rgba(220, 20, 60, 0.267), rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315));
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, (30deg, rgba(220, 20, 60, 0.267), rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315), url(Imagenes/Logo.png)));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, 30deg, rgba(220, 20, 60, 0.267), rgba(160, 81, 45, 0.274), rgba(65, 105, 225, 0.397), rgba(205, 92, 92, 0.356), rgba(128, 0, 128, 0.315, url(Imagenes/Logo.png)));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+main {
+    width: 100vw;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor_todo {
+    background-image: url(Imagenes/logo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja_trasera {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0);
+}
+
+.caja_trasera div {
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja_trasera div p,
+.caja_trasera div button {
+    margin-top: 30px;
+}
+
+.caja_trasera div h3 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja_trasera button {
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transform: all 300ms;
+}
+
+.caja_trasera button:hover {
+    background: white;
+    color: #46A2FD;
+}
+
+
+/*FORMULARIOS*/
+
+.contenedor_loginregistro {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor_loginregistro form {
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor_loginregistro form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+
+.contenedor_loginregistro form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor_loginregistro form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario_login {
+    opacity: 1;
+    display: block;
+}
+
+.formulario_registro {
+    display: none;
+}
+
+
+/*responsive design*/
+
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 50px;
+    }
+    .caja_trasera {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja_trasera div {
+        margin: 0px;
+        position: absolute;
+    }
+    /*formularios*/
+    .contenedor_loginregistro {
+        top: 10px;
+        left: -5px;
+        margin: auto;
+    }
+    .contenedor_loginregistro form {
+        position: relative;
+    }
+}

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-right: 0;
+}
+
+.contenido-nosotros {
+    margin-top: 2px;
+    text-align: center;
+    height: auto;
+    width: 100vw;
+}
+
+.contenido-nosotros h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.contenido-nosotros img {
+    width: 40%;
+    margin-left: 140px;
+}
