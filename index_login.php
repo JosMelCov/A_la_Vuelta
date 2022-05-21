@@ -36,7 +36,7 @@ if(!isset($_SESSION['usuario'])){
             <a href="nosotros.html">AboutUS</a>
             <a href="index.php">Log Out</a>
             <ul class="usuario">
-            <li><a href="usuario.html"><i class="fa-solid fa-user"></i></a></li>
+            <li><a ><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header> 
